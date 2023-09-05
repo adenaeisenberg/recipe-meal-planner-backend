@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get "ingredients" => "ingredients#index"
+  get "ingredients/:id" => "ingredients#show"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  post "ingredients" => "ingredients#create"
 end
